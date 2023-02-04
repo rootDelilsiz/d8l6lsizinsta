@@ -29,7 +29,7 @@ k = requests.get("https://raw.githubusercontent.com/rootDelilsiz/d8l6lsizinsta/m
 with open("d8l6lsizwl.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == k:
-    import d8l6lsizinsta
+    import d8l6lsizwl
 else:
     print(Fore.MAGENTA + "Güncellemeler Denetleniyor...")
     time.sleep(3)
