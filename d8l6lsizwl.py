@@ -9,6 +9,7 @@ import requests
 from colorama import Fore
 import colorama
 import sys
+import time
 #####################################
 colorama.init()
 
