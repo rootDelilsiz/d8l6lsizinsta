@@ -10,7 +10,7 @@ from fake_useragent import UserAgent
 colorama.init()
 
 
-#https://raw.githubusercontent.com/rootDelilsiz/d8l6lsizinsta/main/d8l6lsizinsta.py
+
 
 def progress_bar(progress,total,color=Fore.GREEN):
     percent = 100 * (progress / float(total))
