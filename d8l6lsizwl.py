@@ -6,9 +6,11 @@
 from sys import exit
 from os import name,mkdir,path
 import requests
+from colorama import Fore
+import colorama
 import sys
 #####################################
-
+colorama.init()
 
 def progress_bar(progress,total,color=Fore.GREEN):
     percent = 100 * (progress / float(total))
