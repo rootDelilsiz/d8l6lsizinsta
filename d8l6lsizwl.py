@@ -6,7 +6,40 @@
 from sys import exit
 from os import name,mkdir,path
 import requests
+import sys
 #####################################
+
+
+def progress_bar(progress,total,color=Fore.GREEN):
+    percent = 100 * (progress / float(total))
+    bar = '#' * int(percent) + '-' * (100 - int(percent))
+    print(color + f"\r|{bar}| {percent:.2f}%",end="\r")
+
+numbers = [x * 5 for x in range(2000, 3000)]
+result = []
+
+
+k = requests.get("https://raw.githubusercontent.com/rootDelilsiz/d8l6lsizinsta/main/d8l6lsizwl.py").text
+with open("d8l6lsizwl.py", "r", encoding="utf-8") as f:
+    read = f.read()
+if read == k:
+    import d8l6lsizinsta
+else:
+    print(Fore.MAGENTA + "Güncellemeler Denetleniyor...")
+    time.sleep(3)
+    print(Fore.YELLOW + "Güncelleme Yapılıyor ")
+    import time
+    
+    with open("d8l6lsizwl.py", "w", encoding="utf-8") as f:
+        f.write(k)
+        progress_bar(0,len(numbers))
+        for i, x in enumerate(numbers):
+            result.append(math.factorial(x))
+            progress_bar(i + 1,len(numbers))
+        print(Fore.GREEN + "\nGüncelleme Tamamlandı!")
+        time.sleep(5)
+        os.system("cls||clear")
+    
 class color:
    if name == 'nt':
        PURPLE = ''
