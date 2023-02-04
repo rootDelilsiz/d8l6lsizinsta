@@ -100,9 +100,6 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
     executor.map(test, results)
 
 
-print(len(final))
-
-
 numpy.save('proxies.npy', final)
 
 loadla = numpy.load('proxies.npy')
