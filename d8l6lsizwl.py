@@ -7,6 +7,7 @@ from sys import exit
 from os import name,mkdir,path
 import requests
 from colorama import Fore
+import os
 import colorama
 import sys
 import math
