@@ -222,9 +222,6 @@ def basla():
         r = s.post("https://www.instagram.com/accounts/login/ajax/",data=data,headers=header,proxies=proxies)
 
         i += 1
-        if i == 260:
-
-            i = 0
 
         if 'userId' in r.text:
 
