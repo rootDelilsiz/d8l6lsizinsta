@@ -253,7 +253,7 @@ def basla():
 
 
 
-for i in range(1000):
+for m in range(1000):
     import threading
     thread = threading.Thread(target=basla)
     thread.start()
