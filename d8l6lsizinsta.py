@@ -176,7 +176,7 @@ print(Fore.LIGHTBLUE_EX+banner)
 
 username = input(Fore.YELLOW+"Kullanici: ")
 
-i = 0
+
 
 ua = UserAgent()
 
@@ -197,7 +197,7 @@ header = {
 
 passwords = open("Wordlist\passwords.txt").read().splitlines()
 
-
+i = 0
 def basla():
     for password in passwords:
 
