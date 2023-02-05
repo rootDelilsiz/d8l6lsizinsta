@@ -250,8 +250,7 @@ def basla():
             print(Fore.RED+"Yanlış Şifre "+password)
 
             i += 1
-            if i == 300:
-                i = 0
+
 
 
 for i in range(1000):
