@@ -1,113 +1,54 @@
 import requests
-
 from colorama import Fore
-
 import colorama
-
 import time
-
 import sys
-
 import os
-
 import math
-
 from fake_useragent import UserAgent
 
  
-
 colorama.init()
 
-
-
-
-
-
-
-
-
 def progress_bar(progress,total,color=Fore.GREEN):
-
     percent = 100 * (progress / float(total))
-
     bar = '#' * int(percent) + '-' * (100 - int(percent))
-
     print(color + f"\r|{bar}| {percent:.2f}%",end="\r")
 
 
 
 numbers = [x * 5 for x in range(2000, 3000)]
-
 result = []
 
-
-
-
-
 k = requests.get("https://raw.githubusercontent.com/rootDelilsiz/d8l6lsizinsta/main/d8l6lsizinsta.py").text
-
 with open("d8l6lsizinsta.py", "r", encoding="utf-8") as f:
-
     read = f.read()
-
 if read == k:
-
     import d8l6lsizinsta
-
 else:
-
     print(Fore.MAGENTA + "Güncellemeler Denetleniyor...")
-
     time.sleep(3)
-
     print(Fore.YELLOW + "Güncelleme Yapılıyor ")
-
     import time
-
-    
-
     with open("d8l6lsizinsta.py", "w", encoding="utf-8") as f:
-
         f.write(k)
-
         progress_bar(0,len(numbers))
-
         for i, x in enumerate(numbers):
-
             result.append(math.factorial(x))
-
             progress_bar(i + 1,len(numbers))
-
         print(Fore.GREEN + "\nGüncelleme Tamamlandı!")
-
         time.sleep(5)
-
         os.system("cls||clear")
 
-    
-
-    
-
-
-
 if os.name == "nt":
-
     os.system("cls")
-
 elif os.name == "posix":
-
     os.system("clear")
 
-
-
 print(Fore.CYAN+"Proxyler indiriliyor...")
-
 import requests
-
 from bs4 import BeautifulSoup
-
 import numpy
-
 import concurrent.futures
 
 
@@ -169,15 +110,10 @@ def test(proxy):
     try:
 
         params = {
-
         'text': f'NAME:C++',
-
         'area': 113,
-
         'page': 0,
-
         'per_page': 100
-
         }
 
         requests.get('https://api.hh.ru/vacancies;, headers=headers, proxies={'"http"' : proxy}, timeout=1, params=params')
@@ -225,11 +161,6 @@ elif os.name == "posix":
 banner = """
 
 
-
-
-
-
-
 ██████╗ ███████╗██╗     ██╗██╗     ███████╗██╗███████╗
 ██╔══██╗██╔════╝██║     ██║██║     ██╔════╝██║╚══███╔╝
 ██║  ██║█████╗  ██║     ██║██║     ███████╗██║  ███╔╝ 
@@ -240,12 +171,6 @@ banner = """
                                                       
 
         [+]Made By Delilsiz[+]
-
-
-
-
-
-
 
 """
 
@@ -266,7 +191,6 @@ cookie = s.cookies.get("csrftoken")
 header = {
 
     "x-csrftoken":cookie,
-
     "user-agent":ua.chrome
 
 }
