@@ -170,7 +170,7 @@ banner = """
 
                                                       
 
-        [+]Made By Delilsiz[+]
+        [+]Made By Delilsiz Tean[+]
 
 """
 
