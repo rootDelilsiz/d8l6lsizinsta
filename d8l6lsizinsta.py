@@ -197,7 +197,7 @@ header = {
 
 
 
-password = open("passwords.txt").read().splitlines()
+password = open("Wordlist\passwords.txt").read().splitlines()
 
 
 def basla():
